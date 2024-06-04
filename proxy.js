@@ -1,1 +1,3 @@
-console.log('Hello World!');
+const fs = require("fs");
+
+const config = JSON.parse(fs.readFileSync("config.json"));
