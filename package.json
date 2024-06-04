@@ -1,0 +1,18 @@
+{
+  "name": "sockproxy",
+  "version": "1.0.0",
+  "description": "Un proxy websocket-tcpsocket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattEstHaut/SockProxy.git"
+  },
+  "author": "Delucchi Matteo",
+  "bugs": {
+    "url": "https://github.com/MattEstHaut/SockProxy/issues"
+  },
+  "homepage": "https://github.com/MattEstHaut/SockProxy#readme"
+}
