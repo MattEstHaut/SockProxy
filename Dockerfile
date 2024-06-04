@@ -4,6 +4,6 @@ WORKDIR /proxy
 
 COPY . .
 
-CMD ["node", "proxy.js"]
+CMD ["npm", "start"]
 
 EXPOSE 80
