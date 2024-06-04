@@ -4,6 +4,8 @@ WORKDIR /proxy
 
 COPY . .
 
-CMD ["node", "proxy.js"]
+RUN npm install
+
+CMD ["npm", "start"]
 
 EXPOSE 80
