@@ -8,9 +8,9 @@ Copiez le fichier `default.config.json` en `config.json` et modifiez les valeurs
 
 ```json
 {
-    "wsPort": <port du serveur WebSocket>,
-    "tcpHost": <adresse du serveur TCP>,
-    "tcpPort": <port du serveur TCP>
+    "wsPort": 80, // port du serveur WebSocket
+    "tcpHost": "127.0.0.1", // adresse du serveur TCP
+    "tcpPort": 8080 // port du serveur TCP
 }
 ```
 
