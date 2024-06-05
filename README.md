@@ -8,11 +8,18 @@ Copiez le fichier `default.config.json` en `config.json` et modifiez les valeurs
 
 ```json
 {
-    "wsPort": 80,
-    "tcpHost": "127.0.0.1",
-    "tcpPort": 8080
+    "tcp": {
+        "host": "localhost",
+        "port": 8080
+    },
+
+    "ssl": {
+        "key": null,
+        "cert": null
+    }
 }
 ```
+> 💡 Les clés `key` et `cert` sont optionnelles et permettent de configurer un serveur WebSocket sécurisé (plus d'information [ici](certificates/CERT.md))
 
 - `wsPort` : port du serveur WebSocket
 - `tcpHost` : adresse du serveur TCP
@@ -35,10 +42,12 @@ Construisez l'image avec la commande :
 docker build -t sockproxy .
 ```
 
-Puis, lancez le conteneur avec la commande :
+Puis, lancez le conteneur avec :
 
 ```bash
-docker run -d -p 80:80 sockproxy
+docker run -d -p 80:80 sockproxy # seulement le serveur HTTP
+docker run -d -p 443:443 sockproxy # seulement le serveur HTTPS
+docker run -d -p 80:80 -p 443:443 sockproxy # les deux serveurs
 ```
 
 > 💡 Il est inutile d'installer les dépendances
