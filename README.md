@@ -21,6 +21,10 @@ Copiez le fichier `default.config.json` en `config.json` et modifiez les valeurs
 ```
 > 💡 Les clés `key` et `cert` sont optionnelles et permettent de configurer un serveur WebSocket sécurisé (plus d'information [ici](certificates/CERT.md))
 
+- `wsPort` : port du serveur WebSocket
+- `tcpHost` : adresse du serveur TCP
+- `tcpPort` : port du serveur TCP
+
 ## 🚀 Lancement
 
 Pour installer les dépendances et lancer le serveur, utilisez les commandes suivantes :
